@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Advanced Command Line + Python &mdash; ubic_crash_course 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Python Basics" href="4_Python.html" />
+    <link rel="prev" title="The Linux Terminal" href="2_LinuxTerminal.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> ubic_crash_course
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Lessons</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1_Welcome.html">Hello World: What’s the purpose of bioinformatics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_LinuxTerminal.html">The Linux Terminal</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Advanced Command Line + Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#welcome-back">Welcome Back!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jumping-in-the-deep-end">Jumping in the Deep End</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#copy-paste-the-following-command-into-your-terminal-in-order-and-hit-enter">(0.) Copy-paste the following command into your terminal in order and hit enter.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enter-the-directory-that-was-just-created">1. Enter the directory that was just created</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#name-all-of-the-files-not-other-directories-inside-this-directory-how-many-are-there">2. Name all of the files (not other directories!) inside this directory. How many are there?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execute-the-instructions-file-and-follow-the-prompts-hint-instructions">3. Execute the “instructions” file, and follow the prompts. (hint: <code class="docutils literal notranslate"><span class="pre">./instructions</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file1-txt-contains-the-text-of-a-sherlock-holmes-book-how-many-lines-of-the-file-does-it-take-to-recount-his-tale-in-bohemia">4. file1.txt contains the text of a Sherlock Holmes book. How many lines of the file does it take to recount his tale in Bohemia?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-many-lines-in-file2-txt-contain-a-period-hint-the-answer-is-not-60">5. How many lines in file2.txt contain a period? (<em>Hint: The answer is not 60</em>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confirm-your-answers-to-2-5-with-an-instructor-or-tutor-then-delete-the-directory-you-downloaded-in-step-0">6. Confirm your answers to 2-5 with an instructor or tutor. Then, delete the directory you downloaded in step 0.</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#your-own-file">Your Own File</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vim">vim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#your-turn">Your Turn</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#python-basics">Python Basics</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4_Python.html">Python Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_Biopython.html">Bioinformatics x Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_Challenge1.html">Challenge 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="8.1_Alignment.html">Alignment (Part I)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="9_1_Clustering.html">Clustering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Phylogenetics.html">Phylogenetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_Challenge2.html">Challenge 2</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ubic_crash_course</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Advanced Command Line + Python</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/3_AdvancedTerminal.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="advanced-command-line-python">
+<h1>Advanced Command Line + Python<a class="headerlink" href="#advanced-command-line-python" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="welcome-back">
+<h2>Welcome Back!<a class="headerlink" href="#welcome-back" title="Permalink to this headline">¶</a></h2>
+<p>Welcome to week 2 of the Crash Course. Today’s lesson will be split into two distinct topics. The first builds on the skills you developed <a class="reference internal" href="1_Welcome.html"><span class="doc">last session</span></a>, testing and enforcing your understanding of the command line. The second will introduce you to Python.</p>
+</div>
+<div class="section" id="jumping-in-the-deep-end">
+<h2>Jumping in the Deep End<a class="headerlink" href="#jumping-in-the-deep-end" title="Permalink to this headline">¶</a></h2>
+<p>Last session, we said that we believe in active learning. Below are a bunch of exercises in roughly increaisng order of difficulty. <a class="reference internal" href="extras/2.1_AdvancedCommands.html"><span class="doc">Here’s</span></a> a bunch of advanced command line info you might find useful, though Google is probably your best friend.</p>
+<p><em><strong>Behind the Scenes:</strong> You might wonder, “Why are we being given tasks that we haven’t been taught how to complete?” The answer: that’s science. One of the most powerful skills in bioinformatics is simply being able to parse documenatation to figure out what you need to do. Taking the general knowledge from last lesson and applying it to scenarios you’ve never seen before is very, very valuable!</em></p>
+<div class="section" id="copy-paste-the-following-command-into-your-terminal-in-order-and-hit-enter">
+<h3>(0.) Copy-paste the following command into your terminal in order and hit enter.<a class="headerlink" href="#copy-paste-the-following-command-into-your-terminal-in-order-and-hit-enter" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">-r</span> <span class="pre">~/../smansuri/week2/</span> <span class="pre">~</span></code></p>
+</div>
+<div class="section" id="enter-the-directory-that-was-just-created">
+<h3>1. Enter the directory that was just created<a class="headerlink" href="#enter-the-directory-that-was-just-created" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="name-all-of-the-files-not-other-directories-inside-this-directory-how-many-are-there">
+<h3>2. Name all of the files (not other directories!) inside this directory. How many are there?<a class="headerlink" href="#name-all-of-the-files-not-other-directories-inside-this-directory-how-many-are-there" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="execute-the-instructions-file-and-follow-the-prompts-hint-instructions">
+<h3>3. Execute the “instructions” file, and follow the prompts. (hint: <code class="docutils literal notranslate"><span class="pre">./instructions</span></code>)<a class="headerlink" href="#execute-the-instructions-file-and-follow-the-prompts-hint-instructions" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="file1-txt-contains-the-text-of-a-sherlock-holmes-book-how-many-lines-of-the-file-does-it-take-to-recount-his-tale-in-bohemia">
+<h3>4. file1.txt contains the text of a Sherlock Holmes book. How many lines of the file does it take to recount his tale in Bohemia?<a class="headerlink" href="#file1-txt-contains-the-text-of-a-sherlock-holmes-book-how-many-lines-of-the-file-does-it-take-to-recount-his-tale-in-bohemia" title="Permalink to this headline">¶</a></h3>
+<details>
+  <summary>Stumped? Click me!</summary><p>Does this command give you an idea of what you can search for?</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>head -n <span class="m">70</span> file1.txt <span class="p">|</span> tail -n <span class="m">22</span>
+</pre></div>
+</div>
+</details></div>
+<div class="section" id="how-many-lines-in-file2-txt-contain-a-period-hint-the-answer-is-not-60">
+<h3>5. How many lines in file2.txt contain a period? (<em>Hint: The answer is not 60</em>)<a class="headerlink" href="#how-many-lines-in-file2-txt-contain-a-period-hint-the-answer-is-not-60" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="confirm-your-answers-to-2-5-with-an-instructor-or-tutor-then-delete-the-directory-you-downloaded-in-step-0">
+<h3>6. Confirm your answers to 2-5 with an instructor or tutor. Then, delete the directory you downloaded in step 0.<a class="headerlink" href="#confirm-your-answers-to-2-5-with-an-instructor-or-tutor-then-delete-the-directory-you-downloaded-in-step-0" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="your-own-file">
+<h2>Your Own File<a class="headerlink" href="#your-own-file" title="Permalink to this headline">¶</a></h2>
+<p>So far, you’ve been working with files provided to you. However, for most things you’ll want to do moving forward, you’ll need to create your own. How do you do that?</p>
+<div class="section" id="vim">
+<h3>vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h3>
+<p>We’re going to be using a text editor called “vim”. Think of vim as Microsoft Word, but for your command line. You can use vim to open a file or create your own (just like Word!).</p>
+<p>Here’s a walkthrough of exactly what you’d need to hit on your keyboard to create a file called “new.txt” that contains “hello there” inside of it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">vim</span> <span class="n">new</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">i</span>
+<span class="n">hello</span> <span class="n">there</span>
+<span class="s1">&#39;esc&#39;</span>
+<span class="p">:</span><span class="n">x</span>
+</pre></div>
+</div>
+<details>
+  <summary>Unsure what these commands do? Click me!</summary><ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">new.txt</span></code> - Open a file called new.txt in vim. If no file exists in the directory (true for us!) create a new one</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">i</span></code> - Moves you into insert mode (where you’re actually allowed to type)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hello</span> <span class="pre">there</span></code> - Adds text into the file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">esc</span></code> - Moves out of insert mode</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:x</span></code> - Saves and quits the file</p></li>
+</ol>
+</details><p>Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to confirm that you’ve succeeded in creating this file.</p>
+</div>
+<div class="section" id="your-turn">
+<h3>Your Turn<a class="headerlink" href="#your-turn" title="Permalink to this headline">¶</a></h3>
+<p>Create an executable file called <code class="docutils literal notranslate"><span class="pre">greet.sh</span></code> that can be executed to print “Hello World” to the command line.</p>
+<details>
+  <summary>No idea where to start? Click me!</summary><p>Tackle these subproblems:</p>
+<ol class="simple">
+<li><p>What is an executable file?</p></li>
+<li><p>How do I make a file print “Hello World”?</p></li>
+<li><p>How can I execute a file?</p></li>
+<li><p>[Optional, depending on if #3 fails] How can I make a file executable?</p></li>
+</ol>
+</details><p>Update your program to print “Hello [your_username]”. This should NOT be hardcoded, meaning if your program prints “Hello jsmith” on your laptop, it should print “Hello smansuri” on mine without any changes.</p>
+</div>
+</div>
+<div class="section" id="python-basics">
+<h2>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="4_Python.html"><span class="doc">Click here</span></a> to move on to the next part of this lesson.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="4_Python.html" class="btn btn-neutral float-right" title="Python Basics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2_LinuxTerminal.html" class="btn btn-neutral float-left" title="The Linux Terminal" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

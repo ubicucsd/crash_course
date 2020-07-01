@@ -1,0 +1,43 @@
+# Advanced Terminal Commands
+
+
+## Obtaining Files
+
+```scp```(secure copy) is a command used to copy files from one machine to another. The first argument is the source location, while the second argument is the destination. ```scp file.txt my_username@dns_address.com:/home/my_username/docs```
+
+```curl``` Will download stuff for you. The most simple and relevant combination of options is ```curl -L https://examplelink.com -outdir .``` which will download from https://examplelink.com into the current directory (indicated by the dot). 
+
+```apt-get```Handles packages from the apt library for Debian based systems. However, this installs packages system-wide so you are not going to be able to use it on EC2. The mac equivalent is homebrew. ```sudo apt-get install google-chrome-stable``` will install chrome. 
+
+## Unpackaging
+
+Much of the data people want to download is large, but they want it fast. That's why things like .zip, .tar, .gz and such exist. Those are the file extensions of compressed data. In order to make software work, it must be unpackaged.
+
+```unzip``` Is exactly what it sounds like. This command unzips .zip file types. 
+
+```tar```(tape archive) Is the command linux uses to package and unpackage stuff. This command has an incomprehensible amount of confusing options, so let me just copy paste the ones you should care about. ```tar -xvf file.tar.gz -C .``` unpacks a .tar.gz file into the current directory and ```tar -xvf -C .``` unpacks a .tar file into the current directory. The -C option indicates the files' destination.
+
+
+## Compilation
+
+What is compilation? It is the conversion of one programming language into another. Typically, it is a conversion of what's known as a high-level language (C, Java, Python, etc) to a low level language (binary, assembly). CPUs understand only very very very basic logic, so a super smart program called a compiler has to convert your convoluted and messy code into the simple delicious porridge that the CPU can eat(execute).
+
+**shell scripts and python files** do not need compilation.
+
+**java** compiles by ```javac filename.java```
+
+**C** ```gcc -c filename.c``` to compile and assemble. 
+
+Note: Much of the time, software you download online is already in binary form so there is no need to compile. This is not always the case!
+
+## Execution
+
+**/bin**(binaries) contains your executable files and shells. The computer has a list of folders it searches through to find executables when you type a command and the /bin directory is one of them. When you download software, you should place the executable file or a symbolic link into the /bin directory.
+
+**shell script** a simple ```./executable``` will suffice to execute a script. 
+
+**python** will automatically compile for you before executing with the command ```python filename.py```. 
+
+**java** can be executed with ```java compiledfilename```
+
+**C** is executed like a shell script ```./out```

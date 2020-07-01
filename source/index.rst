@@ -1,20 +1,25 @@
-.. ubic_crash_course documentation master file, created by
-   sphinx-quickstart on Wed Jul  1 11:35:35 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. image:: extras/logo.png
+   :width: 250px
+   :align: left
 
-Welcome to ubic_crash_course's documentation!
-=============================================
+|
+|
+|
+
+Welcome to the Bioinformatics Crash Course!
+===========================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Lessons
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   1_Welcome.md
+   2_LinuxTerminal.md
+   3_AdvancedTerminal.md
+   4_Python.md
+   5_Biopython.md
+   7_Challenge1.md
+   8.1_Alignment.md
+   9_1_Clustering.md
+   10_Phylogenetics.md
+   11_Challenge2.md

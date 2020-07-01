@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alignment (Part I) &mdash; ubic_crash_course 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Clustering" href="9_1_Clustering.html" />
+    <link rel="prev" title="Challenge 1" href="7_Challenge1.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> ubic_crash_course
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Lessons</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1_Welcome.html">Hello World: What’s the purpose of bioinformatics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_LinuxTerminal.html">The Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_AdvancedTerminal.html">Advanced Command Line + Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_Python.html">Python Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_Biopython.html">Bioinformatics x Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_Challenge1.html">Challenge 1</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Alignment (Part I)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#skill-more-python-knowledge-of-alignment-methodology">Skill: More python + knowledge of alignment methodology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pairwise-alignemnt">Pairwise Alignemnt</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#global-alignment">Global Alignment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-exactly-is-a-good-score-why-is-one-alignment-better-than-another">What exactly is a good score? Why is one alignment better than another?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#local-alignment">Local Alignment</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#multiple-sequence-alignment">Multiple Sequence alignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#codon-alignment">Codon Alignment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="9_1_Clustering.html">Clustering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_Phylogenetics.html">Phylogenetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_Challenge2.html">Challenge 2</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ubic_crash_course</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Alignment (Part I)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/8.1_Alignment.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="alignment-part-i">
+<h1>Alignment (Part I)<a class="headerlink" href="#alignment-part-i" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="skill-more-python-knowledge-of-alignment-methodology">
+<h2>Skill: More python + knowledge of alignment methodology<a class="headerlink" href="#skill-more-python-knowledge-of-alignment-methodology" title="Permalink to this headline">¶</a></h2>
+<p>Sequence alignment is the process of putting similar regions closer to each other, and inserting gaps (denoted by ‘-‘) where there may have been an insertion/deletion event. Identifying regions of similarity can help us identify structural, functional, or evolutionary relationships between sequences.</p>
+<p>There are hundreds of alignment methods for different types of information (DNA vs amino acid), different uses (finding common domans vs comparing homologous genes), and different special cases (antibody sequences, viral sequences). If you are interested in learning details about how some existing methods work (this is BENG 181 material): the most generic DNA alignment method is a pairwise dynamic programming method called <a class="reference external" href="https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm">Smith-Waterman</a>, alignment of many sequences (multiple sequence alignment) can be done by <a class="reference external" href="https://en.wikipedia.org/wiki/MAFFT">Fast Fourier Transforms</a>, and alignment for accurate amino acid sequence homology is done by <a class="reference external" href="http://www.biology.wustl.edu/gcg/hmmanalysis.html">hmm profile alignment</a>.</p>
+<p><strong>This lesson will focus on hands on learning of three types of alignment: global, local, and multiple sequence alignments.</strong></p>
+</div>
+<div class="section" id="pairwise-alignemnt">
+<h2>Pairwise Alignemnt<a class="headerlink" href="#pairwise-alignemnt" title="Permalink to this headline">¶</a></h2>
+<p>Pairwise alignment is the alignment of one sequence to one other sequence. In order to look in detail at the usefulness of different types of alignments, we will start by looking at pairwise alignment methods implemented with the <a class="reference external" href="https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm">Smith-Waterman</a> method.</p>
+<div class="section" id="global-alignment">
+<h3>Global Alignment<a class="headerlink" href="#global-alignment" title="Permalink to this headline">¶</a></h3>
+<p>In this case, the word “global” just means that the <strong>entire</strong> first string is aligned as best as possible to the <strong>entire</strong> second string. Used to compare two homologous sequences, like comparing the same gene between individuals or species.</p>
+<p>Make a new Python file <code class="docutils literal notranslate"><span class="pre">aligners.py</span></code> and import some stuff:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import pairwise2 module</span>
+<span class="kn">from</span> <span class="nn">Bio</span> <span class="kn">import</span> <span class="n">pairwise2</span>
+
+<span class="c1"># Import seq objects</span>
+<span class="kn">from</span> <span class="nn">Bio.Seq</span> <span class="kn">import</span> <span class="n">Seq</span>
+
+<span class="c1"># Import method for formatting alignments</span>
+<span class="kn">from</span> <span class="nn">Bio.pairwise2</span> <span class="kn">import</span> <span class="n">format_alignment</span>
+</pre></div>
+</div>
+<p>Define strings <code class="docutils literal notranslate"><span class="pre">TGCCTTAG</span></code> and <code class="docutils literal notranslate"><span class="pre">TGCTTGC</span></code> and using global alignment on them:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pairwise2</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">globalxx</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The alignment method returns a list of the most high scoring(good) alignments. You can print those out by iterating through the alignments with a for-each loop and print them out one by one. Use this syntax to make them look better during printing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">format_alignment</span><span class="p">(</span><span class="o">*</span><span class="n">alignment_name</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>What is that asteriks? In different languages an asteriks has different meanings, but in Python it denotes a variable quantity of arguments. In other words, methods that want this asteriks are capable of accepting either one, maybe two, or maybe more arguments(inputs).</p>
+</div>
+<div class="section" id="what-exactly-is-a-good-score-why-is-one-alignment-better-than-another">
+<h3>What exactly is a good score? Why is one alignment better than another?<a class="headerlink" href="#what-exactly-is-a-good-score-why-is-one-alignment-better-than-another" title="Permalink to this headline">¶</a></h3>
+<p>Glad you asked! If you look at the score printed out below each alignment, you will notice that the score is coincidentially identical to the number of nucleotides that match between the two aligned sequences. The alignment we tried gives gaps, insertions, and deletions a score of zero and matches a score of one. Other alignments may have more complex behaviors, including negative scores for insertions/deletions, custom scores based on which nucleotide is mismatched with which, and more. There are several modes of alignment available on BioPython, each with customizable scoring. Look <a class="reference external" href="http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html">over here</a> if you want to see the range of what BioPython has to offer.</p>
+</div>
+<div class="section" id="local-alignment">
+<h3>Local Alignment<a class="headerlink" href="#local-alignment" title="Permalink to this headline">¶</a></h3>
+<p>The word “local” means the best alignment between two <strong>subsequences</strong>. This method can be used when looking for a conserved gene between two otherwise very different organisms. Aligning the messy differences between two different species is not useful, but finding two subsequences (two genes) that the species have in common without aligning the whole sequences can be very useful.</p>
+<p>Open up <code class="docutils literal notranslate"><span class="pre">aligners.py</span></code> and create strings <code class="docutils literal notranslate"><span class="pre">ATGCGGCCATTATAAGCGGTCTCT</span></code> and <code class="docutils literal notranslate"><span class="pre">GATTATAATT</span></code>. Now, let’s compare how these strings align with globally vs locally. The point is best illustrated when gaps and mismatches are penalized, so indicate the scoring system of the alignment like this:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pairwise2.align.localms(str1,</span> <span class="pre">str2,</span> <span class="pre">1,</span> <span class="pre">-1,</span> <span class="pre">-1,</span> <span class="pre">-1)</span></code>
+<code class="docutils literal notranslate"><span class="pre">pairwise2.align.globalms(str1,</span> <span class="pre">str2,</span> <span class="pre">1,</span> <span class="pre">-1,</span> <span class="pre">-1,</span> <span class="pre">-1)</span></code></p>
+<p>The numbers at the end indicate +1 for matches, -1 for mismatches, -1 for opening a gap, and -1 for extending a gap.</p>
+<p>Looking at the matching nucleotides in global and local alignments of these string, which one makes more sense? Does it make sense to care about the matches the global alignment has at the very end of the sequences?</p>
+</div>
+</div>
+<div class="section" id="multiple-sequence-alignment">
+<h2>Multiple Sequence alignment<a class="headerlink" href="#multiple-sequence-alignment" title="Permalink to this headline">¶</a></h2>
+<p>Multiple sequence alignment aligns multiple sequences, but its inner workings are bit complicated (my way of saying I do not know them well enough to teach them) so we are just going to focus on their applications. This type of alignment is used on a large number of more or less related sequences in order to infer homology and build evolutionary trees. My multiple sequence aligner of choice is mafft, which can be called from inside python.</p>
+<p>Grab <code class="docutils literal notranslate"><span class="pre">/srv/WI20/D_db.fasta</span></code> and <code class="docutils literal notranslate"><span class="pre">/srv/WI20/J_db.fasta</span></code> and align them with the default settings on mafft:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="n">in_file</span> <span class="o">=</span> <span class="s2">&quot;D_db.fasta&quot;</span>
+<span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&quot;mafft&quot;</span><span class="p">,</span> <span class="s2">&quot;--out&quot;</span><span class="p">,</span> <span class="s2">&quot;aligned.fasta&quot;</span><span class="p">,</span> <span class="n">in_file</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>D_db.fasta and J_db.fasta are the databases of known human diversity and joining genes, respectively. These genes are building blocks of the heavy chain on an antibody. We can see that the J’s align pretty neatly, with some deletions, while the D alignment is a mess - many mismatches and gaps. This clearly indicates that J genes are much more highly conserved than D genes, which you probably guessed from their names. Find answers to your questions about heavy chains <a class="reference external" href="https://en.wikipedia.org/wiki/V(D)J_recombination">over here</a></p>
+<p>Now that we are familiar with what alignment has to offer, let us get hands on with a specific implementation:</p>
+</div>
+<div class="section" id="codon-alignment">
+<h2>Codon Alignment<a class="headerlink" href="#codon-alignment" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="8.2_Codon_Alignment.html"><span class="doc">Challenge: Codon Alignment</span></a></p>
+<p>This challenge describes a method of alignment that can be used to track the differences between sequences on the codon level. The goal is achieved with mutliple sequence and some basic sequence manipulation tricks.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="9_1_Clustering.html" class="btn btn-neutral float-right" title="Clustering" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="7_Challenge1.html" class="btn btn-neutral float-left" title="Challenge 1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Additional Sequencing Methods &mdash; ubic_crash_course 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> ubic_crash_course
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Lessons</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_Welcome.html">Hello World: What’s the purpose of bioinformatics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_LinuxTerminal.html">The Linux Terminal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_AdvancedTerminal.html">Advanced Command Line + Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4_Python.html">Python Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5_Biopython.html">Bioinformatics x Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../7_Challenge1.html">Challenge 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../8.1_Alignment.html">Alignment (Part I)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../9_1_Clustering.html">Clustering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_Phylogenetics.html">Phylogenetics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11_Challenge2.html">Challenge 2</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ubic_crash_course</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Additional Sequencing Methods</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/extras/1.1_Extra_Sequencing.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="additional-sequencing-methods">
+<h1>Additional Sequencing Methods<a class="headerlink" href="#additional-sequencing-methods" title="Permalink to this headline">¶</a></h1>
+<p><strong>Sanger Sequencing</strong></p>
+<p>This one is widely taught and known, but a little outdated.</p>
+<p><strong>1.</strong> Lyse the cells and extract DNA. The DNA itself is fragmented and copied many many times over.</p>
+<p><strong>2.</strong> Attach primers to the fragments and separate the experiment into 4 tubes.</p>
+<p><strong>3.</strong> Each tube receives plenty DNA polymerase, plenty deoxynucleosidetriphosphates (dNTPs) and about 1/100th the amount of di-deoxynucleotidetriphosphates (ddNTPs). The issue with ddNTPs is that they don’t have the 3’-OH group. Synthesis stops when it a ddNTP is attached, which happens at various points on various fragments.</p>
+<p><strong>4.</strong> DNA is negatively charged. Heat the DNA to separate it and put through a gel from pos-&gt;neg side, which separates fragments with a resolution of 1 nucleotide.</p>
+<p><strong>5.</strong> The trick is that the ddNTPs are fluorescent! You now have many many fragments whose lengths you know down to the nucleotide. Expose an x-ray film to the gel, and now you have 4 rows representing the 4 nucleotides and dark bands where each of the 4 nucleotides terminated a fragment. Here’s a picture to clarify:</p>
+<p><img alt="image of sanger gel" src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Sequencing.jpg" /></p>
+<p><strong>PacBio Sequencing:</strong></p>
+<p><strong>1.</strong> DNA is immobilized at the bottom of a small well with a DNA polymerase.</p>
+<p><strong>2.</strong> Fluorescent nucleotides are introduced to into the well, each labeled with a unique fluorophore.</p>
+<p><strong>3.</strong> Light from the bottom of the well makes the bases fluoresce as they are added to the DNA template by the polymerase and the sequence of light colors is recorded.</p>
+<p><strong>PacBio</strong></p>
+<p>|Pros |Cons|
+|—|—|<br />|- long reads - up to 15kpb |- expensive |
+|- high throughput| - high error rate |</p>
+<p>Longer reads means that fewer reads are needed for the same coverage. Clearly, PacBio is best used for the reconstruction of longer genes or entire genomes.</p>
+<p><strong>Sanger</strong></p>
+<p>|Pros |Cons|
+|—|—|<br />|- High precision - error rates of ~.001% |- low throughput   |
+|- long read length  |- expensive  |</p>
+<p>Sanger sequencing is currently only really for small sequence lengths in a small number of samples.</p>
+<p><strong>Illumina</strong></p>
+<p>|Pros |Cons|
+|—|—|<br />|- low cost  |- short reads   |
+|- high throughput   |- not cost effective for small number of targets|
+|- decent precision - error rate: 0.46% - 2.4% |   |</p>
+<p>Although the reads are short and the error rate is not as low as Sanger sequencing, Illumina sequencing produces so many sequences that it doesn’t matter. Getting the most out of Illumina means getting the most out of its high throughput and per base coverage, which requires the proper software.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
