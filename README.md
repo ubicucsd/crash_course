@@ -2,8 +2,10 @@
 ### Setup
 To get started, you need to:
 1. Clone this GitHub repository to your local machine
-2. Run `make html` in the project's parent directory, which will the website using the `.md` files. If this works, you're all set! If this does not, continue to the next step.
+2. Run `make html` in the project's parent directory, which will the website using the `.md` files. If this works\*, you're all set! If this does not, continue to the next step.
 3. Run `pip install sphinx`, then run `pip install recommonmark`, and finally run `pip install sphinx-rtd-theme`. Try running `make html` again. If this fails, ask a previous crash course developer to help you troubleshoot.
+
+\* "works" means that you get the message: `The HTML pages are in build/html.`. Warnings are expected and don't need to be corrected.
 
 
 ### Development
