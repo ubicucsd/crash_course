@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'ubic_crash_course'
+project = 'Bioinformatics Crash Course'
 copyright = '2020'
 author = 'Sabeel Mansuri'
 
