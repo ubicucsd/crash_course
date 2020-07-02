@@ -1,4 +1,4 @@
-# The Linux Terminal
+# Lesson 2: The Linux Terminal
 
 Bioinformatics is often memory and computation intensive, so we'll be outsourcing our computational work to a bigger computer called a server. This server will run on the Linux operating system. (This is no different than your laptop running on a Windows or Mac operating system.)
 
@@ -83,10 +83,6 @@ You have 3 tasks:
 3. Print how many lines there are in the file **THAT CONTAIN GENETIC DATA** (no headers)
 
 The commands cheat sheet below and the hint above about deciphering commands you're not familiar with are your friends. Good luck!
-
-### Once you're done, show your answers to an instructor to get checked off. Congratulations! You've completed the first lesson of the Bioinformatics Crash Course!
-
-### Next, try our [second lesson](/3_AdvancedTerminal.md)
 
 ## Commands Cheat Sheet
 

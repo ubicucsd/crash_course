@@ -1,12 +1,8 @@
-# Advanced Command Line + Python
-
-### Welcome Back!
-
-Welcome to week 2 of the Crash Course. Today's lesson will be split into two distinct topics. The first builds on the skills you developed [last session](/1_Welcome.md), testing and enforcing your understanding of the command line. The second will introduce you to Python.
+# Lesson 3: Advanced Command Line
 
 ## Jumping in the Deep End
 
-Last session, we said that we believe in active learning. Below are a bunch of exercises in roughly increaisng order of difficulty. [Here's](/extras/2.1_AdvancedCommands.md) a bunch of advanced command line info you might find useful, though Google is probably your best friend.
+At the beginning of this course, we said that we believe in active learning. Below are a bunch of exercises in roughly increaisng order of difficulty. [Here's](/extras/2.1_AdvancedCommands.md) a bunch of advanced command line info you might find useful, though Google is probably your best friend.
 
 ***Behind the Scenes:** You might wonder, "Why are we being given tasks that we haven't been taught how to complete?" The answer: that's science. One of the most powerful skills in bioinformatics is simply being able to parse documenatation to figure out what you need to do. Taking the general knowledge from last lesson and applying it to scenarios you've never seen before is very, very valuable!*
 
@@ -79,6 +75,3 @@ Create an executable file called `greet.sh` that can be executed to print "Hello
 </details>
 
 Update your program to print "Hello [your_username]". This should NOT be hardcoded, meaning if your program prints "Hello jsmith" on your laptop, it should print "Hello smansuri" on mine without any changes.
-
-## Python Basics
-[Click here](/4_Python.md) to move on to the next part of this lesson.

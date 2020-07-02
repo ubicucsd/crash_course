@@ -1,6 +1,4 @@
-# Phylogenetics
-
-Today's lesson is going to cover basic phylogenetic motifs as well as phylogenetic analysis in a Python environment. Let's get started!
+# Lesson 9: Phylogenetics
 
 ## The Basics
 ### What is Phylogenetics?
@@ -117,7 +115,7 @@ Phylogenetic trees are interpreted using the following terms:
 
 How many common ancestors are there? What does that tell you about the relationships and evolutionary distances between the organisms.
 
-## Challenge I: Different Algorithms, Different Results
+## Challenge: Different Algorithms, Different Results
 
 We made two algorithm choices in our pipeline above. One is the distance calculator's model and the other is the distance tree's model. Use the documentation to find alternate algorithms and try various combinations. You'll see the predicted tree (and the evolutaionary relationships) change!
 

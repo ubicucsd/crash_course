@@ -1,6 +1,4 @@
-# Bioinformatics x Python
-
-### EC2: Please use the EC2 host for this week's lesson.
+# Lesson 5: Bioinformatics x Native Python 
 
 ## Welcome
 
@@ -82,4 +80,4 @@ Great! You've identified what organism this comes from. What exactly is this org
 
 What you just did--exploring an unknown sequence--is one of the simplest and most common bioinformatic tasks. Ask yourself this: does everyone who wants to do this have to write their own algorithms, manually parse through sequences, and copy-paste into a web browser? 
 
-Nope. Let's explore a far more efficient method in the [second part of today's lesson](6_BiopythonV2.md).
+Nope. Let's explore a far more efficient method in the next lesson.

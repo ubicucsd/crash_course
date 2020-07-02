@@ -1,16 +1,20 @@
-# Hello World: What's the purpose of bioinformatics?
+# Lesson 1: Hello Bioinformatics
 
 ### Welcome to the Crash Course!
 
-These activities are designed for students with zero to some programming experience and zero to some bioinformatics experience.  The crash course is always in development, so we ask for everyone to be patient and tell us when we are screwing up. Thanks!
+This course is designed for students with zero to some programming experience and zero to some bioinformatics experience. It is offered as an in-person course for students at UC San Diego, which means that some exercises require you to be a student to access our cloud workspace. Regardless, we hope that the material here is useful even if you are not able to complete all the exercises (and, we hope to make this available to everyone soon!).
 
-## Big Bioinformatics Problems
+Good luck!
 
-As you progress through bioinformatics, you might find yourself developing technical skills without knowing what problems to tackle. In fact, there are several common and difficult problems in bioinformatics worth knowing. Therefore, this lesson will introduce you to of some of the things we, as bioinformaticians, do. 
+- Sabeel Mansuri and Mark Chernyshev, Founders of the Bioinformatics Crash Course
 
-*Note: In this course, we try to avoid lecture-based material. However, in this first lesson, we want to set a foundation of major problems bioinformaticians work on. We'll keep it short, and move on to the interactive part: working in a Linux environment!*
+## Classic Bioinformatics Problems
 
-### I. The Alignment Problem ([full lesson](https://github.com/sabeelmansuri/Bioinformatics-Crash-Course/blob/master/5_Alignment.md))
+As you progress through this course (and bioinformatics in general), you might find yourself developing technical skills without knowing what problems they can be used to tackle. In fact, there are several common (and difficult) problems in bioinformatics worth being familiar with. Therefore, this lesson will introduce you to of some of the things we, as bioinformaticians, do. 
+
+*Note: In this course, we try to avoid lecture-based or text-heavy material. However, in this first lesson, we want to set a foundation of major problems bioinformaticians work on. We'll keep it short, and move on to the interactive part: working in a Linux environment!*
+
+### I. The Alignment Problem ([full lesson](/8.1_Alignment.md))
 
 The first problem we'll look at is alignment. **Alignment is the process of arranging sequences in a way to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between the sequences.** In order to understand why alignment is hard and practical problem, we will start by learning a bit about sequencing DNA. 
 
@@ -39,7 +43,7 @@ Besides helping us reconstruct the DNA put into a sequencer, alignment can also
 
 TLDR: There are numerous complex applications of bioinformatics algorithms, from functional structure predictions to ancestral reconstructions. Alignment serves as the foundation for many of these algorithms, making basic sense of the incomprehensible mass of DNA that sequencing gives us. 
 
-### II. The Clustering Problem ([full lesson](https://github.com/sabeelmansuri/Bioinformatics-Crash-Course/blob/master/6.%20Clustering.md))
+### II. The Clustering Problem ([full lesson](/9_1_Clustering.md))
 
 **Clustering is the the process of assigning data points to groups in such a way that the elements in a group/cluster are more similar to each other than they are to those in other groups.** The definition of what it means to be similar can vary and is determined by the function we use to measure distance between two points.
 
@@ -52,7 +56,7 @@ TLDR: There are numerous complex applications of bioinformatics algorithms, from
 
 - Fuzzy Clustering: Datapoints are not definitively assigned to a specific cluster, rather they are given a likelihood of belonging to a cluster. This can be used to ascertain levels of co expression between genes, revealing genes which may be under common regulatory control. 
 
-## [Your Turn!] Aliview
+## Aliview
 
 Alright, enough of the conceptual stuff. Let's get our hands dirty.
 
@@ -79,7 +83,3 @@ The SNP differences are obvious, but you will notice that there are weirder diff
 3. RT/PCR artifacts
 
 Here's another cool tool: Blast will quickly look up a sequence in the NCBI database and spit out similar sequences it finds. Now, go to aliview and click edit->delete all gaps in all sequences. Copy the first sequence into the clipboard. Google NCBI Blast and open up the first result. Paste the sequence into the big box in the top of the page and click **BLAST** at the bottom. After a few seconds, Blast should link you to a whole lot of glycoprotein that are... from the article these were published in! This is one of the basic uses of Blast - to figure out where a sequence comes from. 
-
-## The Linux Terminal
-
-Click [here](/2_LinuxTerminal.md) to move on to the next part of the lesson.

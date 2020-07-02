@@ -64,4 +64,3 @@ source_suffix = {
 html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
 master_doc = 'index'
 html_theme_options = {'display_version': False}
-html_show_sourcelink = False

@@ -1,9 +1,4 @@
-# Challenge 2
-
-## Welcome
-Welcome to Week 8 of the Crash Course! This will be the final session for the introductory part of our program. We hope that you'll apply for the advanced topics that we'll present in Spring.
-
-This week's lesson is, in some ways, a "final exam" that covers the skills you've learned in Weeks 1-10.
+# ★ Learning Check 2
 
 ## Instructions
 ### Coverage
@@ -45,8 +40,5 @@ When your program is executed, the following should be printed to the terminal f
 * [Phylogenetic tree ordered with deepest clades* on top]  
 
 *Clade depth is defined by the number of terminal nodes.
-
-## Submitting Your Solutions
-Send Sabeel an email titled **[UBIC] Completed Week 8** containing your output for the previous 3 problems.
 
 ## Congratulations! You've completed the introductory portion of the Bioinformatics Crash Course.

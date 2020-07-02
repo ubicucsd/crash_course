@@ -1,14 +1,12 @@
-# Clustering
+# Lesson 8: Clustering
 
-#### Skills: Familiarity with sklearn package and an understanding of why clustering is useful in bioinformatics
-
-#### Syntax note:
+**Syntax note:**
 
 Note that in Python syntax, you will have to use a dot to specify where you want to get a function from. For example, there is a package called numpy, with a module called random, with a function called seed. The seed function is called by typing out ```np.random.seed()```, telling python where exactly it needs to look. 
 
 **WE ARE USING PYTHON3, NOT PYTHON**
 
-### General Factoids
+## General Factoids
 
 **Clustering:** The process of partitioning a dataset into groups based on shared unkown characteristics. In other words, we are looking for patterns in data where we do not necessarily know the patterns to look for ahead of time. 
 
@@ -30,7 +28,7 @@ Note that in Python syntax, you will have to use a dot to specify where you want
 
 3. Finding evolutionary relationships between samples using hierarchical clustering. The earlier on two centers were combined, the closer their corresponding points are from an evolutionary perspective. 
 
-## Generate Data
+## Generating Data
 
 In order to demonstrate the differences between different clustering methods, we need datasets that cluster differently depending on technique. 
 
@@ -62,7 +60,7 @@ If you want to see what your datasets look like, use the ```cluster_plots``` fun
 scp username@ec2-3-135-188-28.us-east-2.compute.amazonaws.com:/home/username/path /localpath/
 ```
 
-## Cluster the Data
+## Clustering Data
 
 ### 1. K-means
 

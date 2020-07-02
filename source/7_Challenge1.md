@@ -1,9 +1,7 @@
-# Challenge 1
+# ★ Learning Check 1
 
 ## Welcome
-Welcome to Week 4 of the Crash Course! This will be our final session this quarter; good luck with finals, and we'll see you in Winter.
-
-This week's lesson is, in some ways, a one-question "midterm" that covers the skills you've learned in Weeks 1-3. It's designed to be more challenging than anything we've done so far, so don't be discouraged if you have to think things over (and fail) before succeeding!
+This week's lesson is, in some ways, a one-question "midterm" that covers the skills you've learned so far. It's designed to be more challenging than anything we've done so far, so don't be discouraged if you have to think things over (and fail) before succeeding!
 
 ## Instructions
 ### Coverage
@@ -59,11 +57,5 @@ Make a copy of your input FASTQ file, available at `~/../smansuri/raw.fastq`. Ha
   Newline characters have an ASCII value of 10.
 </details>
 
-## Submitting Your Solution
-First, a sanity check. Your answer should be in the mid-900's. 
-
-If your answer matches these criteria, send Sabeel an email titled **[UBIC] Completed Week 4** containing your count.
-
-## Congratulations! You've completed Week 4 AND Quarter 1 of the Bioinformatics Crash Course.
-
-### Next, try our [fifth lesson](/8.1_Alignment.md)
+## Checking Your Solution
+Your answer should be in the mid-900's. 
