@@ -62,3 +62,4 @@ source_suffix = {
 }
 
 html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
+master_doc = 'index'
