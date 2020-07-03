@@ -2,11 +2,9 @@
 
 ### Welcome to the Crash Course!
 
-This course is designed for students with zero to some programming experience and zero to some bioinformatics experience. It is offered as an in-person course for students at UC San Diego, which means that some exercises require you to be a student to access our cloud workspace.
+This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is offered as an in-person course for students at UC San Diego, and some exercises require you to be a student to access our cloud workspace.
 
-Regardless, we hope that the material here is useful even if you are not able to complete all the exercises (and, we hope to make this available to everyone soon!).
-
-Good luck!
+Regardless, we hope that the material here is useful even if you are not able to complete all the exercises (and, we hope to make this fully available to everyone soon).
 
 \- Sabeel Mansuri and Mark Chernyshev, Founders of the Bioinformatics Crash Course
 
