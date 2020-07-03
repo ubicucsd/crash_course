@@ -1,5 +1,5 @@
 ## Basic Info
-The webpage is hosted on [bioinformaticscrashcourse.com](bioinformaticscrashcourse.com).
+The webpage is hosted on [bioinformaticscrashcourse.com](https://www.bioinformaticscrashcourse.com/).
 
 ## Instructions
 ### Setup
