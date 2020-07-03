@@ -11,8 +11,15 @@ To get started, you need to:
 \* "works" means that you get the message: `The HTML pages are in build/html.`. Warnings are expected and don't need to be corrected.
 
 
-### Development
-To create a new lesson you need to perform the following steps:
+
+### Development (the easy way)
+To create a new lesson you need to perform the following steps **directly on GitHub**:
+1. Create a new `.md` file under the `source` directory. You should name it something like `#_LessonName.md`.
+2. Open `index.rst` and add the name of the `.md` file you created to the existing list. You should keep `About This Course` as the last entry in the list. Keep in mind that indentation matters!
+3. Edit your new `.md` file directly on GitHub. You'll be able to see what it looks like in Markdown format after saving, which is very similar to how it will render on the website.
+
+### Development (the hard way)
+To create a new lesson you need to perform the following steps **on your local machine**:
 1. Create a new `.md` file under the `source` directory. You should name it something like `#_LessonName.md`.
 2. Open `index.rst` and add the name of the `.md` file you created to the existing list. You should keep `About This Course` as the last entry in the list. Keep in mind that indentation matters!
 3. Create your lesson in the `.md` file. When you want to view your changes, run `make html` in the project's parent directory (above `source`). This will generate `.html` files in the `build` directory. You can open these files in a web browser to view them.
