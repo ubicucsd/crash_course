@@ -1,3 +1,6 @@
+## Basic Info
+The webpage is hosted on [bioinformaticscrashcourse.com](bioinformaticscrashcourse.com).
+
 ## Instructions
 ### Setup
 To get started, you need to:
