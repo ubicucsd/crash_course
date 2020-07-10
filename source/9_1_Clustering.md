@@ -134,4 +134,4 @@ This is essentially the same thing as k-means, but points cannot be hard assigne
   
 ## Challenge
 
-Head [over here](https://github.com/sabeelmansuri/Bioinformatics-Crash-Course/blob/master/9_2_Dirichlet_Challenge.md) to complete our clustering challenge!
+Head [over here](/9_2_Dirichlet_Challenge.md) to complete our clustering challenge!
