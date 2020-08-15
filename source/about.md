@@ -8,6 +8,7 @@ It is currently maintained by:
 - [Ishaan Gupta](https://www.linkedin.com/in/ishaan-gupta-687342109/)
 - [Carleen Li](https://www.linkedin.com/in/carleen-li/)
 - [Yingxi Lin](https://www.linkedin.com/in/yingxi-lin-3ba637153/)
+- Joe shmoe
 
 It was previously maintained by:
 - [Mark Chernyshev](https://www.linkedin.com/in/mark-chernyshev/) *(2018-2020)*
