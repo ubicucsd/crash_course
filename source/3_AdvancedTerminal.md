@@ -4,19 +4,20 @@
 
 At the beginning of this course, we said that we believe in active learning. Below are a bunch of exercises in roughly increaisng order of difficulty. [Here's](/extras/2.1_AdvancedCommands.md) a bunch of advanced command line info you might find useful, though Google is probably your best friend.
 
-***Behind the Scenes:** You might wonder, "Why are we being given tasks that we haven't been taught how to complete?" The answer: that's science. One of the most powerful skills in bioinformatics is simply being able to parse documenatation to figure out what you need to do. Taking the general knowledge from last lesson and applying it to scenarios you've never seen before is very, very valuable!*
+***Behind the Scenes:** You might wonder, "Why are we being given tasks that we haven't been taught how to complete?" The answer: that's science. One of the most powerful skills in bioinformatics is simply being able to parse documentation to figure out what you need to do. Taking the general knowledge from last lesson and applying it to scenarios you've never seen before is very, very valuable!*
 
-##### (0.) Copy-paste the following command into your terminal in order and hit enter.
+## Assignment
+
+**(0.) Copy-paste the following command into your terminal in order and hit enter.**
 `cp -r ~/../smansuri/week2/ ~`
 
-##### 1. Enter the directory that was just created
+**1. Enter the directory that was just created**
 
-##### 2. Name all of the files (not other directories!) inside this directory. How many are there?
+**2. Name all of the files (not other directories!) inside this directory. How many are there?**
 
-##### 3. Execute the "instructions" file, and follow the prompts. (hint: `./instructions`)
+**3. Execute the "instructions" file, and follow the prompts. (hint: `./instructions`)**
 
-##### 4. file1.txt contains the text of a Sherlock Holmes book. How many lines of the file does it take to recount his tale in Bohemia?
-
+**4. file1.txt contains the text of a Sherlock Holmes book. How many lines of the file does it take to recount his tale in Bohemia?**
 <details>
   <summary>Stumped? Click me!</summary>
     
@@ -27,9 +28,9 @@ At the beginning of this course, we said that we believe in active learning. Bel
   ```
 </details>
 
-##### 5. How many lines in file2.txt contain a period? (*Hint: The answer is not 60*)
+**5. How many lines in file2.txt contain a period? (*Hint: The answer is not 60*)**
 
-##### 6. Confirm your answers to 2-5 with an instructor or tutor. Then, delete the directory you downloaded in step 0.
+**6. Confirm your answers to 2-5 with an instructor or tutor. Then, delete the directory you downloaded in step 0.**
 
 ## Your Own File
 

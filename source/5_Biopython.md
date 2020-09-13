@@ -33,7 +33,7 @@ It's clear that this file contains a DNA sequence. Your colleague reminds you th
 
 This means that a sequence "ACGT" from 5' to 3' ([what's this?](https://en.wikipedia.org/wiki/Directionality_(molecular_biology))) is paired up with another sequence "TGCA" from 3' to 5'. These two sequences are called **complements** of one another. You can read more about DNA complementarity [here](https://en.wikipedia.org/wiki/Complementarity_(molecular_biology)).
 
-She recommends that you also extract the complement of the unidentified sequence. Run the following on the command line:
+He/She recommends that you also extract the complement of the unidentified sequence. Run the following on the command line:
 ```
 cp ~/../smansuri/comp.py .
 ```

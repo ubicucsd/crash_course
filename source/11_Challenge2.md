@@ -21,20 +21,18 @@ However, we don't just want to throw you off the deep end. If you do get stuck o
 ## Problem 1
 Find the 100th Fibonacci number (without Googling!). 
 
-You may try to write a recursive solution, but it will not run in time. Perhaps this[https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/] can help?
+You may try to write a recursive solution, but it will not run in time. Perhaps [this](https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/) can help?
 
 ## Problem 2
 In the lab, you're often not going to be given an explanation (such as provided above) of how to perform a task. This challenge will test your ability to use your resources (internet, documentation, etc.) to extend phylogenetic analysis given only input and output.
 
-**Input**   
-Many times, phylogenetic trees are exported as XML files. XML stands for eXtensible Markup Language, and is used in a wide range of applications that require storage or transport of data in a structured fashion. Provided are two XML files, `single.xml`, containing one phylogenetic tree, and `many.xml`, containing many different phylogenetic trees.
+**In:** Many times, phylogenetic trees are exported as XML files. XML stands for eXtensible Markup Language, and is used in a wide range of applications that require storage or transport of data in a structured fashion. Provided are two XML files, `single.xml`, containing one phylogenetic tree, and `many.xml`, containing many different phylogenetic trees.
 
 (They'll be downloaded with different names than many or single)  
 [many.xml](https://github.com/biopython/biopython/blob/master/Tests/PhyloXML/phyloxml_examples.xml)  
 [single.xml](https://github.com/biopython/biopython/blob/master/Tests/PhyloXML/apaf.xml) 
 
-**Output**  
-When your program is executed, the following should be printed to the terminal for every tree (from both files):  
+**Out:** When your program is executed, the following should be printed to the terminal for every tree (from both files):  
 * [Tree Name] or "Unnamed"  
 * [Tree Description] or "No description"  
 * [Phylogenetic tree ordered with deepest clades* on top]  

@@ -31,7 +31,7 @@ We can compare the nucleotides at each position and find that 1 and 2 differ by 
 
 ## Biopython
 
-If you're not familiar with Biopython, please skim our previous lesson [here](https://github.com/sabeelmansuri/binf_crash_course/blob/master/4_Biopython.md). 
+If you're not familiar with Biopython, please skim our previous lesson [here](/6_BiopythonV2.md). 
 
 **If you know what you're doing, running this on your own machine instead of on EC2 will probably give you some nicer graphs. This is optional, continue on EC2 if you wish!**
 
@@ -48,7 +48,7 @@ If nothing shows up during execution, you're good to go!
 
 ![phylo_tree](https://cdn.kastatic.org/ka-perseus-images/56c951f23a9092f45b66768ff611fca6debf9294.png)
 
-You've probably seen one or more of the phylogenetic trees diagramed above. These visually represent the heart and soul of pylogenetics. Because we use a **last universal common ancestor model** (LUCA model), in which the root represents an ancestral organism from which all living organisms today evolved, each evolutionary relationship can be represented by a branching of the tree.
+You've probably seen one or more of the phylogenetic trees diagrammed above. These visually represent the heart and soul of phylogenetics. Because we use a **last universal common ancestor model** (LUCA model), in which the root represents an ancestral organism from which all living organisms today evolved, each evolutionary relationship can be represented by a branching of the tree.
 
 ### The Data
 Let's see this in action with our own phylogenetic tree! Remember those five organisms we mentioned earlier? Well here they are, each with a conserved DNA region sequenced:
@@ -66,7 +66,7 @@ Copy and paste all of the data above (including the header file) into a new file
 
 #### What kind of data goes into making trees?
 
-As with basically all other programs dealing with biological sequences, phylogenetics algorithms need you to align your sequences before you input them, so that they are easier to compare. If you are curious about different methods of alignment and their influence on the final alignment go over to our lesson on alignment [over here](https://github.com/sabeelmansuri/binf_crash_course/blob/master/5_Alignment.md).
+As with basically all other programs dealing with biological sequences, phylogenetics algorithms need you to align your sequences before you input them, so that they are easier to compare. If you are curious about different methods of alignment and their influence on the final alignment go over to our lesson on alignment [over here](/8.1_Alignment.md).
 
 ### The Setup
 
@@ -81,24 +81,24 @@ from Bio import AlignIO
 **Make sure you can run this file without errors!**
 
 Here's some documentation that may help you if you get stuck:
-[AlignIO](https://biopython.org/DIST/docs/api/Bio.AlignIO-module.html)
-[DistanceCalculator](https://biopython.org/DIST/docs/api/Bio.Phylo.TreeConstruction.DistanceCalculator-class.html)
+[AlignIO](https://biopython.org/DIST/docs/api/Bio.AlignIO-module.html),
+[DistanceCalculator](https://biopython.org/DIST/docs/api/Bio.Phylo.TreeConstruction.DistanceCalculator-class.html),
 [DistanceTreeConstructor](https://biopython.org/DIST/docs/api/Bio.Phylo.TreeConstruction.DistanceTreeConstructor-class.html)
 
 
-*Note: If you're not able to follow the instructions below, ask me (Sabeel) for a templated file to help guide you!*
+*Note: If you're not able to follow the instructions below, ask the bootcamp developers for a templated file to help guide you!*
 
 ### Alignment
 
-The first step is to import the (already aligned) sequences int our program. **Use AlignIO to read in the data, and store it in a variable `aln`. Print `aln` to confirm this step worked correctly.**
+The first step is to import the (already aligned) sequences into our program. **Use AlignIO to read in the data, and store it in a variable `aln`. Print `aln` to confirm this step worked correctly.**
 
 ### Distance Matrix
 
-Now that we have our data, we're interested in how similiar (or different) the sequences are from each other. The more similar, the more likely they are to be evolutionarily close. Therefore, we use a distance matrix to store information on how similar each DNA sequence is from every other sequence. **Create a Distance Calculator object with the 'identity' model. Use it to calculate the distance matrix of the alignment, and store it in a variable `dm`.** 
+Now that we have our data, we're interested in how similar (or different) the sequences are from each other. The more similar, the more likely they are to be evolutionarily close. Therefore, we use a distance matrix to store information on how similar each DNA sequence is from every other sequence. **Create a Distance Calculator object with the 'identity' model. Use it to calculate the distance matrix of the alignment, and store it in a variable `dm`.** 
 
 ### Phylogenetic Tree
 
-Now, the real magic... creating the phylogenetic tree! We can use our Distance Tree Constructor to make a tree from our distance matrix. **Use the UPGMA algorithm in Distance Tree Constructor to create a tree, store it in a variable `tree`.**
+Now, the real magic... creating the phylogenetic tree! We can use our Distance Tree Constructor to make a tree from our distance matrix. **Use the UPGMA algorithm in Distance Tree Constructor to create a tree and store it in a variable `tree`.**
 
 ### Visualization
 
@@ -117,7 +117,7 @@ How many common ancestors are there? What does that tell you about the relations
 
 ## Challenge: Different Algorithms, Different Results
 
-We made two algorithm choices in our pipeline above. One is the distance calculator's model and the other is the distance tree's model. Use the documentation to find alternate algorithms and try various combinations. You'll see the predicted tree (and the evolutaionary relationships) change!
+We made two algorithm choices in our pipeline above. One is the distance calculator's model and the other is the distance tree's model. Use the documentation to find alternate algorithms and try various combinations. You'll see the predicted tree (and the evolutionary relationships) change!
 
 How do we know which tree is the best? Let's look at an analogous example with phenotypic mutations that's easier to follow than genotypic mutations. Consider the two trees below:
 
@@ -135,7 +135,7 @@ So, what are these models we're switching between? Let's take a look:
 This model is heavily based upon the assumption that there is an equal rate of evolution (resulting in all branch lengths being the same in the tree). **This is a VERY POOR assumption**, which makes this model rather unreliable.
 
 #### Neighbor-Joining (NJ)
-This model is an agglomerative (bottom-up, or merging) clustering method. We've done agglomerative clustering before [here](https://github.com/ubicucsd/development_curriculum/blob/master/7_Clustering.md), so take a look! Importantly, NJ allows for unequal rates of evolution, which generally improves the output tree.
+This model is an agglomerative (bottom-up, or merging) clustering method. We've done agglomerative clustering before [here](/9.1_Clustering.md), so take a look! Importantly, NJ allows for unequal rates of evolution, which generally improves the output tree.
 
 ### Distance Calculation Methods
 
@@ -150,6 +150,6 @@ Matches are worth 5 points, while mismatches are worth -4 points. The formula to
 This scoring takes the difference in transitions(purine->purine or pyrimidine->purine) vs transversions(purine->pyrimidine and vice versa) into account. Transversions are less likely to occur, so they are scored -6 compared to the -1 for transitions. Matches are given a score of 6. 
 
 ## Acknowledgements
-Many data and algorithms are adatpted from the offical Biopython textbook.  
-Algorithm adapted from [Towards Data Science](https://towardsdatascience.com/).  
+Many data and algorithms are adapted from the offical Biopython textbook.  
+Algorithm adapted from [Towards Data Science](https://towardsdatascience.com/). 
 Diagrams adapted from [Khan Academy](https://www.khanacademy.org/science/biology/her/tree-of-life/a/building-an-evolutionary-tree).

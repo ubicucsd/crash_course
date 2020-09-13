@@ -92,7 +92,7 @@ The commands cheat sheet below and the hint above about deciphering commands you
 
 ```cd```(change directory) Change directory to whatever is specified.
 
-```head``` Print the beiginning of the specified file to the terminal.
+```head``` Print the beginning of the specified file to the terminal.
 
 ```cat``` Print whatever follows to the terminal. If a file name is specified, print the contents to the terminal.
 

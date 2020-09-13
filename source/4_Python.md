@@ -50,7 +50,7 @@ Now, run the code the same way we ran "Hello.py". You should see "Bioinformatics
 
 ##### vim-hint: navigate to a specific line in vim by going into command mode and typing ```:14```
 
-At this point, you can remove the "#" from the start of the last line (this is called uncommenting). Your Python senses should tell you that this line will now print out myString. Take a look at how myString is defined above and take a guess about what should be printed when you run the program. Once you're ready, run the program.
+At this point, you can remove the "#" from the start of the last line (this is called uncommenting). Your Python senses should tell you that this line will now print out *myString*. Take a look at how *myString* is defined above and take a guess about what should be printed when you run the program. Once you're ready, run the program.
 
 What if you only wanted to print *part* of your string, not the whole thing? Remember that a string is like a list (with the first character at index 0). So, what if we wanted to print just "Hello"? We can use specify a range of indexes to print from like so:
 

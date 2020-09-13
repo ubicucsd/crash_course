@@ -17,12 +17,12 @@ Additionally, you'll never need to download any software. Everything you need is
 ### Getting Help
 In the real world, you're often on your own when you're stuck and need help. Reading through Google searches, documentations, tutorials, and manuals is a real life skill. 
 
-However, we don't just want to throw you off the deep end. If you do get stuck on something and you can't figure it out, you can draft and email and send it to Sabeel. Provide a specific description of 1) what you're trying to accomplish 2) what issue you're running into 3) what you've already tried to troubleshoot it. If we find many common issues, we'll send out an FAQ/hints email on Sunday.
+However, we don't just want to throw you off the deep end. If you do get stuck on something and you can't figure it out, you can draft an email and send it to the bootcamp instructors. Provide a specific description of 1) what you're trying to accomplish 2) what issue you're running into 3) what you've already tried to troubleshoot it. If we find many common issues, we'll send out an FAQ/hints email on Sunday.
 
 ### Good luck, have fun!
 
 ## The Problem
-We've previously described how and why we sequence DNA. The raw output of these sequencing machines are [FASTQ](https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html) files. Recall that each base that a FASTQ file contains is paired with a quality score that's encoded in [ASCII](http://www.asciitable.com/) (proportional to how confident the machine is that the base was identified correctly). We, of course, do not want to have our downstream analyses tainted by low-confidence sequences. 
+We've previously described how and why we sequence DNA. The raw output of these sequencing machines are [FASTQ](https://support.illumina.com/bulletins/2016/04/fastq-files-explained.html) files. Each base that a FASTQ file contains is paired with a quality score that's encoded in [ASCII](http://www.asciitable.com/) (proportional to how confident the machine is that the base was identified correctly). We, of course, do not want to have our downstream analyses tainted by low-confidence sequences. 
 
 There are various techniques for cleaning up such raw data. Your goal here is to implement one possible method: We will only keep reads if:
 ```
