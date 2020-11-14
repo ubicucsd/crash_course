@@ -22,7 +22,13 @@ The first problem we'll look at is alignment. **Alignment is the process of arra
 
 This is the most widely used "golden standard" method of sequencing DNA. The main idea is that DNA is fragmented into pieces, attached to a flow cell, copied many times over by PCR, and the complement strand is determined one nucleotide at a time. The modified nucleic acids Illumina uses during the generation of complementary strands emit light when they are bound. Illumina sequencing adds one base, measures the color output of the flow cell, adds a different base, measures the color output and repeats over and over. Here is a nice graphic depicting the process:
 
-![graphic explaining illumina](http://www.3402bioinformaticsgroup.com/wp-content/uploads/2016/07/NGS.png)
+<div align="center">
+    <figure class="image"><img src="http://www.3402bioinformaticsgroup.com/wp-content/uploads/2016/07/NGS.png", width = 800>
+        <figcaption>(graphic explaining illumina)
+        </figcaption>
+    </figure>
+</div>
+
 
 There is also a video explaining Illumina sequencing which you'll watch in *every single Bioinformatics class* you take in the future, found [here](https://www.youtube.com/watch?v=fCd6B5HRaZ8). 
 
