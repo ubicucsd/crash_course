@@ -40,8 +40,10 @@ Because the "print" statement in Python outputs whatever follows it to the comma
 
 ### Basic syntax
 
-You'll need to obtain a file I've written and add it to your "pydir" directory. Using the `cp` command, and knowing that the file is currently located in `~/../smansuri/syntax.py`, copy the file into your "pydir" directory.
-
+You'll need to obtain a file 
+```shell
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1MOVGIAwde3Op4kApbn3Hw_C8_WETFt3Y' -O syntax.py
+```
 Now, open the syntax.py file and take a look inside.
 
 Make sure you understand what's happening. Follow the comments closely, and ask one of us if you have any questions.
@@ -90,7 +92,7 @@ This is one simple **representation** of how you could achieve this task. The **
 Let's get a sample fasta file. Use the following command to download it straight in your working directory:
 
 ```shell
-cp /srv/Winter19/gencode.vM17.lncRNA_transcripts_subsampled.fasta test.fasta
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=17NqX2e5jA9Jko-gV9lD5Bbnj9m2beKCJ' -O gencode.vM17.IncRNA_subsampled.fasta
 ```
 
 Check the contents of your directory. You should see a file called "test.fasta". 
