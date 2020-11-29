@@ -10,7 +10,7 @@ So far, we've been working only on the command line. However, you'll often want 
 
 Create a new directory called "pydir". Enter the directory.
 
-Python should already be installed on your workstations. Let's make sure: Type the following on the command line:
+Python might not be installed on your workstations. In order to check: Type the following on the command line:
 ```shell
 python3
 ```
@@ -21,7 +21,14 @@ Python 3.6.8 (default, Oct  7 2019, 12:59:55)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
-Type exit(), and move on.
+Type exit() or quit(), and move on.
+
+<details>
+    <summary>Need to install python? Follow these steps:</summary>
+    - Go to https://www.python.org/downloads/
+    - Download the latest version of Python for your OS
+    - Open the installer and follow the installation steps
+</details>
 
 ## How to Python
 
@@ -85,7 +92,7 @@ Say I have a fasta file containing genetic information ([what is a fasta file?](
         -print the line-
   ```
 
-This is one simple **representation** of how you could achieve this task. The **implementation** in Python, as we shall see, uses a loop. Which one of the three pseudocode lines above suggests we will need a loop?
+   This is one simple **representation** of how you could achieve this task. The **implementation** in Python, as we shall see, uses a loop. Which one of the three pseudocode lines above suggests we will need a loop?
 </details>
 
 
