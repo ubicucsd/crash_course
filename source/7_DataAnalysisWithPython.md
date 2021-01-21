@@ -17,7 +17,7 @@ We have used lists in Python, but instead of using those built-in structures it 
 
 <div align="center">
     <figure class="image"><img src="https://miro.medium.com/max/1400/1*i5bjiMtaH8GhKaScSrefsw.png" alt="three data structures" width="600">
-        <figcaption> Table 1: (adapted from _Towards Data Science_) summarizes differences between the three data structures
+        <figcaption> <h5> Table 1: (adapted from _Towards Data Science_) summarizes differences between the three data structures </h5>
         </figcaption>
     </figure>
 </div>
@@ -27,7 +27,7 @@ All have their pros and cons, and are all useful in different scenarios. However
 
 <div align="center">
     <figure class="image"><img src="https://miro.medium.com/max/1400/1*rv1JADavAhDKN4-3iM7phQ.png" alt="three data structures" width="800">
-        <figcaption> Fig 1: 3 formats inter-transform
+        <figcaption> <h5> Fig 1: 3 formats inter-transform </h5>
         </figcaption>
     </figure>
 </div>
@@ -117,9 +117,16 @@ We explore two examples - a small dataset, and a large dataset
 ### 2.1 Small Dataset example: Ladder Distances (Read, Plot, Regress, Write)
 In gel electrophoresis, a DNA band travels farther if it has greater number of base pairs. We have data for band distances (cm) 
 
-By measuring distance form the well, we can determine length of DNA fragments in that band.
+There is a non-linear direct relationship between band distances and length of fragments, but the constant depends on the gel properties. We use a standard library of known fragment sizes that appears like 'ladder' and measure the distances from the wells of the 'rungs' or the bands. In Fig 2, the ladder is λHindIII. Then by measuring distance from the well for our samples (A(1,2,3),B(1,2,3)), we can determine the corresponding length of DNA fragments.
 
-Let's get Ishaan's BIMM 101 (Recombinant DNA lab) readings:
+<div align="center">
+    <figure class="image"><img src="https://github.com/ubicucsd/crash_course/blob/master/source/extras/gel.png?raw=true" alt="Gel image" width="600">
+        <figcaption> <h5> Fig 2: shows the image of Ishaan's gel under high frequency light </h5>
+        </figcaption>
+    </figure>
+</div>
+
+Let's get Ishaan's BIMM 101 (Recombinant DNA lab) ladder distance readings:
 ```shell
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1QDnwIniSqER03VxS5jGNdBLq4dZ1t66o' -O ladder_distances.csv
 head ladder_distances.csv
@@ -183,13 +190,14 @@ ladder_dist[[ladder_dist.columns[0]]]
 ```
 
 Now feel free to read pandas documentation and get particular cells:
-
+```python 
 #Get particular cell 
 # By label
 # TODO: Get the distance of the fifth gel band using ladder_dist.at
 
 # By int index
 # TODO: Get the same using ladder_dist.iat
+```
 <!--
 ladder_dist.at['fifth','distance']
 ladder_dist.iat[4,1]
@@ -278,7 +286,7 @@ Given multiple pairs <i>x</i> and <i>y</i> (the blue data points), which might b
 
 <div align="center">
     <figure class="image"><img src="https://raw.githubusercontent.com/ubicucsd/crash_course/master/source/extras/regression.png" alt="Linear Regression graph" width="600">
-        <figcaption>Fig 3: Expected output of Linear regression analysis
+        <figcaption> <h5> Fig 3: Expected output of Linear regression analysis </h5>
         </figcaption>
     </figure>
 </div>
