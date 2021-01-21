@@ -317,5 +317,5 @@ print(np.exp(linregressor.predict( [[18],[26.16]] )))
 
 Ishaan's hand-drawn semi-log curve gave the answers 3900 bp and 1000 bp. Do your answers seem consistent? Feel free to use the plot to convince yourself.
 
-So shall we move to move to the large dataset? This dataset is from a historical paper "Molecular classification of cancer: class discovery and class prediction by gene expression monitoring" and we will use that for our classification workshop in the next lesson :)
+So shall we move to move to the large dataset? This dataset is from a historical paper *"Molecular classification of cancer: class discovery and class prediction by gene expression monitoring"* and we will use that for our classification workshop in the next lesson :)
 
