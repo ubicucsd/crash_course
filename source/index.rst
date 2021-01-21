@@ -19,7 +19,8 @@ Welcome to the Bioinformatics Crash Course!
    4_Python.md
    5_Biopython.md
    6_BiopythonV2.md
-   7_Challenge1.md
+   6.1_Challenge1.md
+   7_DataAnalysisWithPython.md
    8.1_Alignment.md
    9_1_Clustering.md
    10_Phylogenetics.md
