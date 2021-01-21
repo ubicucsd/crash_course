@@ -281,7 +281,7 @@ For machine learning, one of the most popular python packages is [**sklearn**](h
     <summary>No clue how that works or even means??</summary>
 Look at Fig 3 graph. We are given the blue data points, we are trying to predict that orange line that best fits the data.
 Equation of an ideal straight line is of <i>y = mx + c</i> form.
-Given multiple pairs <i>x</i> and <i>y</i> (the blue data points), which might be imperfectly linearly related, and we find the parameters <i>m</i> and <i>c</i> that give straight (orange) line <i>y_est = mx+c</i> where <i>y_est</i> closely estimates <i>y</i> values. A demonstration would perhaps explain even better.
+Given multiple pairs <i><b>x</b></i> and <i><b>y</b></i> (the blue data points), we find the parameters <i>m</i> and <i>c</i> that give straight (orange) line <i>y_est = m<b>x</b>+c</i> where <i>y_est</i> closely estimates <i><b>y</b></i> values. A demonstration would perhaps explain even better.
 </details>
 
 <div align="center">
