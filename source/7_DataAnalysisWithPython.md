@@ -276,6 +276,13 @@ Equation of an ideal straight line is of <i>y = mx + c</i> form.
 Given multiple pairs <i>x</i> and <i>y</i> (the blue data points), which might be imperfectly linearly related, and we find the parameters <i>m</i> and <i>c</i> that give straight (orange) line <i>y_est = mx+c</i> where <i>y_est</i> closely estimates <i>y</i> values. A demonstration would perhaps explain even better.
 </details>
 
+<div align="center">
+    <figure class="image"><img src="https://raw.githubusercontent.com/ubicucsd/crash_course/master/source/extras/regression.png" alt="Linear Regression graph" width="600">
+        <figcaption>Fig 3: Expected output of Linear regression analysis
+        </figcaption>
+    </figure>
+</div>
+
 So let's start machine learning!
 Since we're performing linear regression, we build a linear regression model object ```linregressor``` using ``` linear_model.LinearRegression()``` from ```linear_model``` that we already imported from ```sklearn```.
 
@@ -289,7 +296,7 @@ distY = [[x] for x in dist]
 log_bp = [[y] for y in np.log(bp)]
 distY,log_bp
 ```
-You have become a pro if you came up with that, but numpy has a special function to convert 1-D to 2-D ```np.atleast_2d()```. (Hurray!) 
+You are really getting the hang of it if you came up with that, but also numpy has a special function to convert 1-D to 2-D ```np.atleast_2d()```. (Hurray!) 
 
 So to get the transpose of ```a```, just use ```np.atleast_2d(a).T```.
 
@@ -305,11 +312,22 @@ Now that we have column vectors ```distY``` and ```log_bp```, lets fit the model
 
 Now we can get the parameters _m_ and _c_ using ```linregressor.coef_``` and ```linregressor.intercept_``` respectively. Can we use these parameters to get our best-fit line?
 
-Plot the best-fit line continous (not dot) for our _x_ (dist) values with the actual _(x,y)_ (i.e (dist,bp)) data points as dots. 
+Plot the best-fit line continous (not dot) for our _x_ (dist) values with the actual _(x,y)_ (i.e (dist,bp)) data points as dots. Use the code given below.
+
+```python
+plt.plot(dist,bp,'o')
+plt.plot(distY, np.exp(linregressor.coef_*distY + linregressor.intercept_,))
+# or to get the line starting from x = 0
+# plt.plot( np.hstack([[0],dist]), np.exp(linregressor.coef_*np.hstack([[0],dist]) + linregressor.intercept_)[0] ) 
+plt.yscale('log')
+plt.xlabel("Distance traveled by the band (mm)")
+plt.ylabel("Length of DNA fragments in the band (bp)")
+```
+
 You should be getting a graph like Fig 3.
 
 This line of best-fit lets us predict the lengths of fragments for sample A (dist = 18 mm) and B (dist = 26.16 mm). 
-Besides getting ```linregressor.coef_*dist_A + linregressor.intercept_``` to get the log(bp_A), can also use ```linregressor.predict(dist_A)``` to do that.
+Besides getting ```linregressor.coef_*dist_A + linregressor.intercept_``` to get the log(bp_A), we can also use ```linregressor.predict(dist_A)```.
 ```python
 print(np.exp(linregressor.coef_*[18,26.16] + linregressor.intercept_))
 print(np.exp(linregressor.predict( [[18],[26.16]] )))
