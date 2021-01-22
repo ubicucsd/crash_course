@@ -1,4 +1,4 @@
-# Data analysis with python
+# Lesson 7: Data analysis with python
 
 The power of Python partially lies in the many library it offers. For this lesson and as a general paractice for data analysis with python, go ahead and perform these imports:
 ```python
