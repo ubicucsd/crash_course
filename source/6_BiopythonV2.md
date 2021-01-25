@@ -58,8 +58,12 @@ Check out [this table](http://www.fao.org/3/y2775e/y2775e0e.htm) to see what ami
 
 ### Access
 
-You'll be using the same genetic data as before. This time, instead of having various files for various methods, we're going to be using just one file. Isn't that handy? Copy it to your directory:
+You'll be using the same genetic data as before. 
+```shell
+!wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1qalp5p_feGsd-G_FtOq6v-OAb5US3rDM' -O unidentified.fasta
 ```
+This time, instead of having various files for various methods, we're going to be using just one file. Isn't that handy? Copy it to your directory:
+```shell
 !wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1BNiRspwn7EiracdCLHy6mtwhnl3NTu-F' -O biopythonExercise.py
 ```
 
