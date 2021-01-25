@@ -60,7 +60,7 @@ Check out [this table](http://www.fao.org/3/y2775e/y2775e0e.htm) to see what ami
 
 You'll be using the same genetic data as before. This time, instead of having various files for various methods, we're going to be using just one file. Isn't that handy? Copy it to your directory:
 ```
-cp ~/../smansuri/biopython.py .
+!wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1BNiRspwn7EiracdCLHy6mtwhnl3NTu-F' -O biopythonExercise.py
 ```
 
 This program will provide you with feedback as you progress through the next few steps. Run the program as you complete each step. You'll find the [Biopython package documentation](http://biopython.org/DIST/docs/api/) useful.
@@ -86,6 +86,22 @@ Recall the two markers that could suggest your unknown sample may, in fact, be r
 2. The GC Content is above 55%.
 
 Follow the instructions in the file.
+
+And as you might have guessed from the closing comments of the last lesson, instead of parsing files manually, we can use the file parsers in Biopython to get the fasta sequence from our fasta file easily.
+Create the biopython SeqRecord object which stores all headers in ```id``` attribute and sequences in ```seq``` attribute:
+```python
+record = SeqIO.read("unidentified.fasta", "fasta") # Read SeqIO documentation
+print(record.id, record.seq)
+```
+Now let's Blast!
+```python
+result_handle = NCBIWWW.qblast("blastn", "nt", record.seq)
+blast_qresult = SearchIO.read(result_handle, "blast-xml")
+print(blast_qresult)
+# Get the description of top 5 hits
+print([hit.description for hit in blast_qresult[:5]])
+```
+We'll return to using Biopython in a future lesson on Alignment.
 
 #### Credits
 Exercises are adapted from [Rosalind](http://rosalind.info), the official [Biopython tutorial textbook](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf), and a [course](http://disi.unitn.it/~teso/courses/sciprog/python_biopython_exercises.html) from the University of Trento.
