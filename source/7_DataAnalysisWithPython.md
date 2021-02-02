@@ -300,9 +300,9 @@ However, for 1-dimensional numpy array ```a```, ```a.T``` returns the same row v
 
 One simple way to get our Y and X is to:
 ```python
-distY = [[x] for x in dist]
+distX = [[x] for x in dist]
 log_bp = [[y] for y in np.log(bp)]
-distY,log_bp
+distX,log_bp
 ```
 You are really getting the hang of it if you came up with that, but also numpy has a special function to convert 1-D to 2-D ```np.atleast_2d()```. (Hurray!) 
 
@@ -316,7 +316,7 @@ print(np.atleast_2d(a))
 print(np.atleast_2d(a).T)
 ```
 
-Now that we have column vectors ```distY``` and ```log_bp```, lets fit the model with ```linregressor.fit(distY,log_bp) # fit([x values],[y values])```
+Now that we have column vectors ```distX``` and ```log_bp```, lets fit the model with ```linregressor.fit(distX,log_bp) # fit([x values],[y values])```
 
 Now we can get the parameters _m_ and _c_ using ```linregressor.coef_``` and ```linregressor.intercept_``` respectively. Can we use these parameters to get our best-fit line?
 
@@ -324,7 +324,7 @@ Plot the best-fit line continous (not dot) for our _x_ (dist) values with the ac
 
 ```python
 plt.plot(dist,bp,'o')
-plt.plot(distY, np.exp(linregressor.coef_*distY + linregressor.intercept_,))
+plt.plot(distX, np.exp(linregressor.coef_*distX + linregressor.intercept_,))
 # or to get the line starting from x = 0
 # plt.plot( np.hstack([[0],dist]), np.exp(linregressor.coef_*np.hstack([[0],dist]) + linregressor.intercept_)[0] ) 
 plt.yscale('log')
