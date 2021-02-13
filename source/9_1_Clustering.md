@@ -34,9 +34,9 @@ In order to demonstrate the differences between different clustering methods, we
 
 Copy the starter file into your directory:
 
-```/home/ubuntu/clustering_lesson/clust.py``` 
+```https://drive.google.com/file/d/13j7v4lUOfWY4PhR9mT1-SBao8FkitbEh/view?usp=sharing``` 
 
-This file contains a plotting function - don't touch it! We will be creating stuff for that plotting function to plot in a minute, so write your code below that function. 
+This file ```clust.py``` contains a plotting function - don't touch it! We will be creating stuff for that plotting function to plot in a minute, so write your code below that function. 
 
 Start by creating some blobs using numpy's random normal generator. First, create a seed for the random number generator with 
 
@@ -54,7 +54,7 @@ We will be comparing how our point blobs cluster to the way that circles of data
 
 If you want to see what your datasets look like, use the ```cluster_plots``` function
 
-**Note:** ```cluster_plots``` will save your plots to a pdf file in your current directory, the name of which can be changed. You'll have to scp the file over to your computer to view it. 
+**Note:** ```cluster_plots``` will save your plots to a pdf file in your current directory, the name of which can be changed.
   
 ```
 scp username@ec2-3-135-188-28.us-east-2.compute.amazonaws.com:/home/username/path /localpath/
@@ -63,10 +63,10 @@ scp username@ec2-3-135-188-28.us-east-2.compute.amazonaws.com:/home/username/pat
 ## Clustering Data
 
 ### 1. K-means
-
+![](https://stanford.edu/~cpiech/cs221/img/kmeansViz.png)
 #### Steps:
 
-&nbsp;&nbsp; I. Select K centers. This can be done a variety of ways, the easiest of which is to select a random point, find the farthest point from that and select it, find the furthest point from the previous and so on. 
+&nbsp;&nbsp; I. Select K centers. This can be done a variety of ways, the easiest of which is to select a random point, find the farthest point from that and select it, find the furthest point from the previous and so on. , This is called [farthest first traversal](https://en.wikipedia.org/wiki/Farthest-first_traversal)
   
 &nbsp;&nbsp; II. Assign each point to the center nearest to it. 
   
@@ -83,7 +83,7 @@ We will be using the KMeans algorithm from sklearn's cluster package to dataset1
   ```
   
 ### 2. Agglomerative Hierarchical 
-
+![](https://3.bp.blogspot.com/-TQYHVkgesMg/WbTcMIOuquI/AAAAAAAAD3Y/dY4YpxJ3OhU5VGppwcrS6j-ewvlddxSjwCLcBGAs/s1600/hcust.PNG)
 #### Description:
 
 &nbsp;&nbsp; I. Start with every point being its very own cluster center. 
@@ -119,9 +119,9 @@ This is essentially the same thing as k-means, but points cannot be hard assigne
   
   I. Select K centers randomly (or slightly less randomly, like [farthest first traversal](https://en.wikipedia.org/wiki/Farthest-first_traversal). 
   
-  II. Expectation step: Assign a responsibility (a likelyhood) for each point in respect to each cluster. Basically, the closer a point is to a center the higher the likelyhood of that point. This can be calculated in a variety of ways, but the main idea is that it is some function relating the distance from a point to a center to the distances between all points and that center to see if it is much closer or further than other points
+  II. Expectation step: Assign a responsibility (a likelihood) for each point in respect to each cluster. Basically, the closer a point is to a center the higher the likelyhood of that point. This can be calculated in a variety of ways, but the main idea is that it is some function relating the distance from a point to a center to the distances between all points and that center to see if it is much closer or further than other points
   
-  III. Maximization step: compute new cluster centers by using a **weighted** average of the points based on the likelyhoods calculated in step II. 
+  III. Maximization step: compute new cluster centers by using a **weighted** average of the points based on the likelihoods calculated in step II. 
 
 #### Code:
   Let's go ahead and see what will happen with our blobs and circles under this clustering algorithm:
