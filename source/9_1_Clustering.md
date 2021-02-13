@@ -1,4 +1,4 @@
-# Lesson 8: Clustering
+# Lesson 9: Clustering
 
 **Syntax note:**
 
