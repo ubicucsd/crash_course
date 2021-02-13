@@ -42,4 +42,4 @@ Find patterns among inputs (features), no labels in data
 
 We built a linear regression model in the last lesson, and Classification and Dimensionaloty Reduction component of the ML lesson is currently available as  [Kaggle Notebook on Tumor Classification between AML and ALL and finding top genes contributing to the classification.](https://www.kaggle.com/ishaanash/tumor-classification-pca)
 
-Now, we explore Clustering.
+Next, we will explore Clustering.
