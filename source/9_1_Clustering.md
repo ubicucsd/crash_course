@@ -112,9 +112,8 @@ We will be using the KMeans algorithm from sklearn's cluster package to dataset1
    Use ```cluster_plots()``` to graph the plot resulting from the regular AgglomerativeClustering beside the graph that plots the connected AgglomerativeClustering. As you may have guessed, this fixes the circle problem. 
    
 ### 3. Soft Clustering
-
+![](https://sandipanweb.files.wordpress.com/2017/03/wkmeans1.gif?w=354)
 #### Description:
-
 This is essentially the same thing as k-means, but points cannot be hard assigned to a cluster. Instead, each point has a probability of being in each cluster, and points with higher probabilities influence the center of that cluster more. 
   
   I. Select K centers randomly (or slightly less randomly, like [farthest first traversal](https://en.wikipedia.org/wiki/Farthest-first_traversal). 
