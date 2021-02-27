@@ -65,14 +65,14 @@ scp username@ec2-3-135-188-28.us-east-2.compute.amazonaws.com:/home/username/pat
 ### 1. K-means
 ![](https://stanford.edu/~cpiech/cs221/img/kmeansViz.png)
 #### Steps:
-
-&nbsp;&nbsp; I. Select K centers. This can be done a variety of ways, the easiest of which is to select a random point, find the farthest point from that and select it, find the furthest point from the previous and so on. , This is called [farthest first traversal](https://en.wikipedia.org/wiki/Farthest-first_traversal)
+(We present the **Lloyd Algorithm** here, but there are other algorithms for k-means clustering)
+&nbsp;&nbsp; I. Select K centers. This can be done a variety of ways, the easiest of which is to select _k_ random points; maybe find a random point, find the farthest point from that and select it, find the furthest point from the previous and so on; this is called [farthest first traversal](https://en.wikipedia.org/wiki/Farthest-first_traversal)
   
-&nbsp;&nbsp; II. Assign each point to the center nearest to it. 
+&nbsp;&nbsp; II. Assign each point to the center nearest to it. _(Centers to Clusters step)_
   
-&nbsp;&nbsp; III. For each center, take all the points attached to it and take their average to create a new center for that cluster.
+&nbsp;&nbsp; III. For each center, take all the points attached to it and take their average to create a new center for that cluster. 
   
-&nbsp;&nbsp; IV. Reassign all points to their nearest center and continue reassigning + averaging until the iteration when nothing changes
+&nbsp;&nbsp; IV. Reassign all points to their nearest center _(Clusters to Centers step)_ and continue reassigning + averaging until the iteration when nothing changes. 
   
 #### Code:
 
@@ -81,6 +81,7 @@ We will be using the KMeans algorithm from sklearn's cluster package to dataset1
   kmeans_dataset1 = cluster.KMeans(n_clusters=k).fit_predict(dataset1)
   cluster_plots(dataset1, dataset2, kmeans_dataset1, kmeans_dataset2)
   ```
+  (While using the sklearn implementation as a black box is the general practice as we've seen so far, it is a good learning practice and a nice coding challenge to implement the Lloyd Algortihm yourself. Check out this [Rosalind problem "Implement the Lloyd Algorithm for k-Means Clustering"](http://rosalind.info/problems/ba8c/) (You could solve the [previous problem](http://rosalind.info/problems/ba8b/) on Rosalind for distance calculation)
   
 ### 2. Agglomerative Hierarchical 
 ![](https://3.bp.blogspot.com/-TQYHVkgesMg/WbTcMIOuquI/AAAAAAAAD3Y/dY4YpxJ3OhU5VGppwcrS6j-ewvlddxSjwCLcBGAs/s1600/hcust.PNG)
@@ -131,6 +132,10 @@ This is essentially the same thing as k-means, but points cannot be hard assigne
   
   Use these new clusters in our ```cluster_plots()```
   
+  Also feel freee to check out Rosalind problem "Implement the Soft k-Means Clustering Algorithm"](http://rosalind.info/problems/ba8d/).
 ## Challenge
 
 Head [over here](/9_2_Dirichlet_Challenge.md) to complete our clustering challenge!
+
+#### Credits
+Lloyd Algorithm k-means clustering and Soft Clustering explanation and challenge are adapted from [Rosalind](http://rosalind.info), particularly [Rosalind problem "Implement the Lloyd Algorithm for k-Means Clustering"](http://rosalind.info/problems/ba8c/) and [Rosalind problem "Implement the Soft k-Means Clustering Algorithm"](http://rosalind.info/problems/ba8d/)
