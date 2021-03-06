@@ -1,4 +1,4 @@
-# Lesson 9: Phylogenetics
+# Lesson 11: Phylogenetics
 
 ## The Basics
 ### What is Phylogenetics?
