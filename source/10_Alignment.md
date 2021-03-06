@@ -1,4 +1,4 @@
-# Lesson 8: Alignment
+# Lesson 10: Alignment
 
 ## Alignment Basics
 
