@@ -18,11 +18,14 @@ Welcome to the Bioinformatics Crash Course!
    3_AdvancedTerminal.md
    4_Python.md
    5_Biopython.md
-   6_BiopythonV2.md
-   6.1_Challenge1.md
+   6.1_BiopythonV2.md
+   6.2_Challenge1.md
    7_DataAnalysisWithPython.md
-   8.1_Alignment.md
-   9_1_Clustering.md
-   10_Phylogenetics.md
-   11_Challenge2.md
+   8_Classification_PCA.md
+   9.1_Clustering.md
+   9.2_Dirichlet_Challenge.md
+   10.1_Alignment.md
+   10_2_Codon_Alignment.md
+   11.1_Phylogenetics.md
+   11.2_Challenge2.md
    about.md
