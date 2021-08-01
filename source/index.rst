@@ -28,5 +28,10 @@ Welcome to the Bioinformatics Crash Course!
    10_2_Codon_Alignment.md
    11.1_Phylogenetics.md
    11.2_Challenge2.md
+   
+   :caption: Lessons
+   6.1_Challenge1.md
+   9.2_Dirichlet_Challenge.md
+   11.2_Challenge2.md
    about.md
    
