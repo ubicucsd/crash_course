@@ -18,8 +18,8 @@ Welcome to the Bioinformatics Crash Course!
    3_AdvancedTerminal.md
    4_Python.md
    5_Biopython.md
-   6.1_BiopythonV2.md
-   6.2_Challenge1.md
+   6.1_Challenge1.md
+   6.2_BiopythonV2.md
    7_DataAnalysisWithPython.md
    8_Classification_PCA.md
    9.1_Clustering.md
