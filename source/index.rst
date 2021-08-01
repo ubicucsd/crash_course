@@ -20,7 +20,8 @@ Welcome to the Bioinformatics Crash Course!
    5_Biopython.md
    6.2_BiopythonV2.md
    7_DataAnalysisWithPython.md
-   
+.. toctree::
+   :maxdepth: 1
    :caption: Workshops
    6.2_BiopythonV2.md
    7_DataAnalysisWithPython.md
@@ -29,7 +30,8 @@ Welcome to the Bioinformatics Crash Course!
    10.1_Alignment.md
    10_2_Codon_Alignment.md
    11.1_Phylogenetics.md
-   
+.. toctree::
+   :maxdepth: 1
    :caption: Challenges
    6.1_Challenge1.md
    9.2_Dirichlet_Challenge.md
