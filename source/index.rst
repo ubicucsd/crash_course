@@ -12,7 +12,7 @@ Welcome to the Bioinformatics Crash Course!
 .. toctree::
    :maxdepth: 1
    :caption: Lessons
-   about.md
+   
    1_Welcome.md
    2_LinuxTerminal.md
    3_AdvancedTerminal.md
@@ -28,5 +28,5 @@ Welcome to the Bioinformatics Crash Course!
    10_2_Codon_Alignment.md
    11.1_Phylogenetics.md
    11.2_Challenge2.md
-   
+   about.md
    
