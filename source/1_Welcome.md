@@ -2,7 +2,7 @@
 
 ### Welcome to the Crash Course!
 
-This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego to enable them to do research and projects like modeling Cancer type from gene expressin levels, and get some exposure before taking upper-div classes.
+This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego to enable them to do research and projects like [modeling Cancer type from gene expressin levels](/8_Classification_PCA.md), and get some exposure before taking upper-div classes.
 
 Regardless, we hope that the material here is useful even if you are not able to complete all the exercises.
 
@@ -49,7 +49,7 @@ Besides helping us reconstruct the DNA put into a sequencer, alignment can also
 
 TLDR: There are numerous complex applications of bioinformatics algorithms, from functional structure predictions to ancestral reconstructions. Alignment serves as the foundation for many of these algorithms, making basic sense of the incomprehensible mass of DNA that sequencing gives us. 
 
-### II. The Clustering Problem ([full lesson](/9_1_Clustering.md))
+### II. The Clustering Problem ([full lesson](/9.1_Clustering.md))
 
 **Clustering is the the process of assigning data points to groups in such a way that the elements in a group/cluster are more similar to each other than they are to those in other groups.** The definition of what it means to be similar can vary and is determined by the function we use to measure distance between two points.
 
