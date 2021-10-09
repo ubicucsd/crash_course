@@ -2,7 +2,7 @@
 
 ### Welcome to the Crash Course!
 
-This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego.
+This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego to enable them to do research and projects like modeling Cancer type from gene expressin levels, and get some exposure before taking upper-div classes.
 
 Regardless, we hope that the material here is useful even if you are not able to complete all the exercises.
 
