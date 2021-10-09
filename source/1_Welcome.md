@@ -2,7 +2,7 @@
 
 ### Welcome to the Crash Course!
 
-This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego to enable them to do research and projects like [modeling Cancer type from gene expressin levels](/8_Classification_PCA.md), and get some exposure before taking upper-div classes.
+This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego to enable them to do research and projects like [modeling Cancer type from gene expression levels](../8_Classification_PCA.md), and get some exposure before taking upper-div classes.
 
 Regardless, we hope that the material here is useful even if you are not able to complete all the exercises.
 
@@ -14,7 +14,7 @@ As you progress through this course (and bioinformatics in general), you might f
 
 *Note: In this course, we try to avoid lecture-based or text-heavy material. However, in this first lesson, we want to set a foundation of major problems bioinformaticians work on. We'll keep it short, and move on to the interactive part: working in a Linux environment!*
 
-### I. The Alignment Problem ([full lesson](/8.1_Alignment.md))
+### I. The Alignment Problem ([full lesson](./8.1_Alignment.md))
 
 The first problem we'll look at is alignment. **Alignment is the process of arranging sequences in a way to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between the sequences.** In order to understand why alignment is hard and practical problem, we will start by learning a bit about sequencing DNA. 
 
@@ -49,7 +49,7 @@ Besides helping us reconstruct the DNA put into a sequencer, alignment can also
 
 TLDR: There are numerous complex applications of bioinformatics algorithms, from functional structure predictions to ancestral reconstructions. Alignment serves as the foundation for many of these algorithms, making basic sense of the incomprehensible mass of DNA that sequencing gives us. 
 
-### II. The Clustering Problem ([full lesson](/9.1_Clustering.md))
+### II. The Clustering Problem ([full lesson](/source/9.1_Clustering.md))
 
 **Clustering is the the process of assigning data points to groups in such a way that the elements in a group/cluster are more similar to each other than they are to those in other groups.** The definition of what it means to be similar can vary and is determined by the function we use to measure distance between two points.
 
