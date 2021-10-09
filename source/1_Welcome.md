@@ -2,7 +2,7 @@
 
 ### Welcome to the Crash Course!
 
-This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego to enable them to do research and projects like [modeling Cancer type from gene expression levels](../8_Classification_PCA.md), and get some exposure before taking upper-div classes.
+This course is designed for individuals with zero to some programming experience and zero to some bioinformatics experience. It is ideally offered as a series of in-person workshops, specifically for students at UC San Diego to enable them to do research and projects like [modeling Cancer type from gene expression levels](/source/8_Classification_PCA.md), and get some exposure before taking upper-div classes.
 
 Regardless, we hope that the material here is useful even if you are not able to complete all the exercises.
 
@@ -14,7 +14,7 @@ As you progress through this course (and bioinformatics in general), you might f
 
 *Note: In this course, we try to avoid lecture-based or text-heavy material. However, in this first lesson, we want to set a foundation of major problems bioinformaticians work on. We'll keep it short, and move on to the interactive part: working in a Linux environment!*
 
-### I. The Alignment Problem ([full lesson](./8.1_Alignment.md))
+### I. The Alignment Problem ([full lesson](/source/8.1_Alignment.md))
 
 The first problem we'll look at is alignment. **Alignment is the process of arranging sequences in a way to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between the sequences.** In order to understand why alignment is hard and practical problem, we will start by learning a bit about sequencing DNA. 
 
@@ -32,7 +32,7 @@ This is the most widely used "golden standard" method of sequencing DNA. The mai
 
 There is also a video explaining Illumina sequencing which you'll watch in *every single Bioinformatics class* you take in the future, found [here](https://www.youtube.com/watch?v=fCd6B5HRaZ8). 
 
-Want to learn more about different sequencing methods? We have a document describing non-Illumina methods in more detail [over here](/extras/1.1_Extra_Sequencing.md)
+Want to learn more about different sequencing methods? We have a document describing non-Illumina methods in more detail [over here](/source/extras/1.1_Extra_Sequencing.md)
 
 ***Comparing Sequencing Methods and Why they Matter***
 
