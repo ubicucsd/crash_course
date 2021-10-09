@@ -32,7 +32,7 @@ This is the most widely used "golden standard" method of sequencing DNA. The mai
 
 There is also a video explaining Illumina sequencing which you'll watch in *every single Bioinformatics class* you take in the future, found [here](https://www.youtube.com/watch?v=fCd6B5HRaZ8). 
 
-Want to learn more about different sequencing methods? We have a document describing non-Illumina methods in more detail [over here](/source/extras/1.1_Extra_Sequencing.md)
+Want to learn more about different sequencing methods? We have a document describing non-Illumina methods in more detail [over here](https://www.bioinformaticscrashcourse.com/extras/1.1_Extra_Sequencing.html)
 
 ***Comparing Sequencing Methods and Why they Matter***
 
@@ -49,7 +49,7 @@ Besides helping us reconstruct the DNA put into a sequencer, alignment can also
 
 TLDR: There are numerous complex applications of bioinformatics algorithms, from functional structure predictions to ancestral reconstructions. Alignment serves as the foundation for many of these algorithms, making basic sense of the incomprehensible mass of DNA that sequencing gives us. 
 
-### II. The Clustering Problem ([full lesson](/source/9.1_Clustering.md))
+### II. The Clustering Problem ([full lesson](https://www.bioinformaticscrashcourse.com/9.1_Clustering.html))
 
 **Clustering is the the process of assigning data points to groups in such a way that the elements in a group/cluster are more similar to each other than they are to those in other groups.** The definition of what it means to be similar can vary and is determined by the function we use to measure distance between two points.
 
