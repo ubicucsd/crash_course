@@ -138,5 +138,10 @@ for line in file:
 
 Run Loop.py and see what happens. Voila.
 
+If instead of printing the these headers, you wanted to put them in a list or a set, there's another python magic called List comprehension.
+..
+..
+..
+
 ## Your Turn
 Modify Loop.py so that it counts the number of G's and C's in the DNA sequences. Be sure not to count the header files. This value has real biological significance that you can read about [here](https://en.wikipedia.org/wiki/GC-content).
