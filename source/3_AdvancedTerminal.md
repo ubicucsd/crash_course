@@ -52,8 +52,12 @@ So far, you've been working with files provided to you. However, for most things
 
 ### vim
 
-We're going to be using a text editor called "vim". Think of vim as Microsoft Word, but for your command line. You can use vim to open a file or create your own (just like Word!).
+We're going to be using a text editor called "vim". Think of vim as Microsoft Word, but for your command line. You can use vim to open a file containing text or create your own (just like Word!).
 
+Vim is navigated through keyboard commands, which at first are confusing and mostly non-intuitive. However, once you become familiar with using these keyboard shortcuts, vim can become one of the fastest text-editors to use. (Note: An advanced user may also edit the .vimrc file to customize vim to better fit your habits or adjust UI style.)
+  
+Here is a helpful interactive online resource on learning the vim keyboard commands: [openVim](https://www.openvim.com/)
+  
 Here's a walkthrough of exactly what you'd need to hit on your keyboard to create a file called "new.txt" that contains "hello there" inside of it:
 
 ```
