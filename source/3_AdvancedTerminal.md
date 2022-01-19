@@ -27,6 +27,7 @@ File2.txt:
 wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=17kYqxphGrkCK30FQuOUDIXOUhiZvjAMd' -O file2.txt
 ```
 **1. file1.txt contains the text of a Sherlock Holmes book. How many lines of the file does it take to recount his tale in Bohemia?**
+*Hint: The table of contents is form line 48 to 70*
 <details>
   <summary>Stumped? Click me!</summary>
     
@@ -34,6 +35,10 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=17kYq
   
   ```shell
   head -n 70 file1.txt | tail -n 22
+  ```
+  You can also use command `awk` which is a great multipurpose effecitent text processing command.
+  ```shell
+  awk "NR<70" file1.txt | awk "NR>48"
   ```
 </details>
 
